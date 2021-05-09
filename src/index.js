@@ -1,8 +1,25 @@
-import "react" from React
-import "react-dom" from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
 
-const App= () => {
-    return <div>Hi there</div>
-}
+const App = () => {
+  return (
+    <div className="ui container comments">
+      <div className="comment">
+        <a href="/" className="avatar">
+          <img alt="avatar" />
+        </a>
+        <div className="content">
+          <a href="/" className="author">
+            Sam
+          </a>
+          <div className="metadata">
+            <span className="date">Today at 6PM</span>
+          </div>
+          <div className="text">Nice BLog post</div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-ReactDOM.render(<App />, document.querySelector('#root'))
+ReactDOM.render(<App />, document.querySelector("#root"));
