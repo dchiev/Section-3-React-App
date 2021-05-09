@@ -1,4 +1,5 @@
 import React from "react";
+import faker from "faker";
 
 const CommentDetail = () => {
   return (
@@ -8,7 +9,7 @@ const CommentDetail = () => {
       </a>
       <div className="content">
         <a href="/" className="author">
-          {faker.name()}
+          {faker.name.findName()}
         </a>
         <div className="metadata">
           <span className="date">Today at 6PM</span>
